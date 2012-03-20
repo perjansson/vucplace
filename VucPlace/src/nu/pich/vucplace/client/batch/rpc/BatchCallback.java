@@ -6,6 +6,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public class BatchCallback implements AsyncCallback<BatchResult> {
 
+	@SuppressWarnings("unused")
 	private final Handler handler;
 
 	public BatchCallback(Handler handler) {
