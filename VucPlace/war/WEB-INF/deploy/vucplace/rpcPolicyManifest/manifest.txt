@@ -1,0 +1,3 @@
+# Module vucplace
+# RPC service class, partial path of RPC policy file
+net.customware.gwt.dispatch.client.standard.StandardDispatchService, 29355A15A00A266CB88FC9B14E621A82.gwt.rpc

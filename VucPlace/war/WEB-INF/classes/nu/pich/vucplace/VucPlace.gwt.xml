@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='vucplace'>
+
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.google.gwt.activity.Activity' />
+	<inherits name='com.google.gwt.place.Place' />
+	<inherits name="com.google.gwt.i18n.I18N" />
+	<inherits name='net.customware.gwt.dispatch.Dispatch' />
+
+	<inherits name='com.google.gwt.user.theme.clean.Clean' />
+<!-- 	<inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+<!-- 	<inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+<!-- 	<inherits name='com.google.gwt.user.theme.dark.Dark' /> -->
+
+<!-- 	<extend-property name="locale" values="sv"/> -->
+
+	<set-configuration-property name="CssResource.style" value="pretty" />
+	<set-configuration-property name="UiBinder.useSafeHtmlTemplates" value="true" />
+
+	<entry-point class='nu.pich.vucplace.client.VucPlaceEntryPoint' />
+
+	<replace-with class="nu.pich.vucplace.client.WebClientFactory">
+		<when-type-is class="nu.pich.vucplace.client.ClientFactory" />
+	</replace-with>
+
+	<source path='client' />
+	<source path='shared' />
+
+</module>

@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field="resources" type="nu.pich.vucplace.client.WebResources" />
+
+	<g:VerticalPanel addStyleNames="{resources.style.postPanel}">
+		<g:VerticalPanel addStyleNames="{resources.style.element} {resources.style.left}">
+			<g:HorizontalPanel>
+				<g:Label ui:field="name" addStyleNames="{resources.style.name}" />
+				<g:Label ui:field="date" addStyleNames="{resources.style.date}" />
+			</g:HorizontalPanel>
+			<g:Anchor ui:field="link" addStyleNames="{resources.style.link}" />
+			<g:HTML ui:field="message" />
+		</g:VerticalPanel>
+		<g:HorizontalPanel addStyleNames="{resources.style.element} {resources.style.right}">
+			<g:Image ui:field="trashCan" resource="{resources.trashCan}" styleName="{resources.style.clickable}" />
+			<g:Image ui:field="questionMark" resource="{resources.questionMark}" styleName="{resources.style.clickable}" />
+		</g:HorizontalPanel>
+	</g:VerticalPanel>
+
+</ui:UiBinder>
